@@ -1,17 +1,22 @@
-import Vue from 'vue'
-import App from './App.vue'
-import * as firebase from 'firebase'
-Vue.use(firebase)
+import Vue from 'vue';
+import './plugins/vuetify';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import firebase from 'firebase/app';
 // Setup Firebase
 var config = {
-  apiKey: "AIzaSyBn2Z28kjxf-G0N-91LWVJuykRN3zk3teo",
-  projectId: "mandala-me",
-  storageBucket: "mandala-me.appspot.com",
+	apiKey: 'AIzaSyBn2Z28kjxf-G0N-91LWVJuykRN3zk3teo',
+	projectId: 'mandala-me',
+	databaseURL: 'https://mandala-me.firebaseio.com',
+	storageBucket: 'mandala-me.appspot.com',
 };
 firebase.initializeApp(config);
-
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.use(firebase);
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+	router,
+	store,
+	render: h => h(App),
+}).$mount('#app');

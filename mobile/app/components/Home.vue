@@ -90,14 +90,14 @@
                 <Image row="1" src="~/images/logo.png" width="400"/>
                 <PaintPad
                     row="2"
-                    canvasColor="#ccc"
+                    canvasColor="transparent"
                     ref="paintPad"
                     margin="10"
                     :drawColor="drawColor"
                     :drawWidth="drawWidth"
                     :airbrushFlow="airbrushFlow"
                     :drawOpacity="drawOpacity"
-                    style="border-radius:5;opacity:1"
+                    style="border-radius:5;border-width:2px;opacity:1"
                 />
             </GridLayout>
         </StackLayout>

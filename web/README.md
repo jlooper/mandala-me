@@ -1,4 +1,4 @@
-# mandala
+# web2
 
 ## Project setup
 ```
