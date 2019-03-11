@@ -6,6 +6,7 @@
         height="100"
         label="Spin speed"
         thumb-color="purple"
+        color="blue"
         thumb-label="always"
       ></v-slider>
     </v-flex>
