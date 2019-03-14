@@ -1,31 +1,11 @@
 <template>
-  <div>
-    <div class="message">{{msg}}</div>
-    <img src="~/components/icon.png" alt="logo">
-  </div>
+  <v-card>
+    <v-card-text>
+      <h1 align="center">Build your personal mandala</h1>
+    </v-card-text>
+    <img src="~/assets/logo_lg.png" class="my-3" contain height="500">
+    <v-card-text title style="text-align: center">
+      <v-btn href="#/build" color="primary" dark large>Get Started</v-btn>
+    </v-card-text>
+  </v-card>
 </template>
-<script>
-export default {
-  name: "Welcome",
-  props: {
-    msg: String
-  }
-};
-</script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="stylus">
-.message {
-  color: #42b983;
-  display: block;
-  margin: auto;
-  margin-top: 4em;
-  text-align: center;
-}
-
-img {
-  height: 75px;
-  display: block;
-  margin: auto;
-  margin-top: 4em;
-}
-</style>

@@ -1,7 +1,7 @@
 <template web>
   <v-content style="padding:10px">
     <v-container grid-list-md fluid row wrap class="wrapper">
-      <h1>Pick five images</h1>
+      <h1>Pick four images</h1>
       <v-layout row wrap>
         <v-flex v-for="image in images" :key="image.id" xs6 sm4 md2>
           <v-card class="card">
@@ -59,10 +59,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(["images"]),
-    isNotInFavorites() {
-      return false;
-    }
+    ...mapState(["images"])
   },
   methods: {
     addToFavorites(image) {

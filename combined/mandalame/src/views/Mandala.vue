@@ -1,6 +1,12 @@
 <template web>
-  <v-layout align-start justify-center row fill-height>
-    <v-flex xs12 offset-md4>
+  <v-layout wrap>
+    <v-container>
+      <v-layout justify-center>
+        <v-btn color="purple" dark @click.stop="drawer = !drawer">Manage Mandala</v-btn>
+      </v-layout>
+    </v-container>
+
+    <v-navigation-drawer v-model="drawer" absolute temporary class="pa-3">
       <v-slider
         v-model="duration"
         height="100"
@@ -9,9 +15,9 @@
         color="blue"
         thumb-label="always"
       ></v-slider>
-    </v-flex>
+    </v-navigation-drawer>
 
-    <div class="container">
+    <div>
       <span class="center" :style="{ 'animation-duration': duration +'s' }">
         <div
           class="center-element circle one"
@@ -120,7 +126,8 @@ export default {
   },
   data() {
     return {
-      duration: 60
+      duration: 60,
+      drawer: null
     };
   }
 };

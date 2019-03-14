@@ -16,8 +16,8 @@ var config = {
 };
 firebase.initializeApp(config);
 Vue.config.productionTip = false;
-Vue.use(firebase);
-
+//Vue.use(firebase);
+Vue.prototype.$firebase = firebase;
 Vue.use(Vuetify, {
 	iconfont: 'md',
 	theme: {
