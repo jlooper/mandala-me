@@ -1,0 +1,72 @@
+Page {
+    background-image: url('~/assets/bg-opaque.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
+    font-weight: 400;
+}
+
+.white {
+    color: white;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+image {
+  margin: 0 10;
+}
+
+.card {
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10;
+  margin: 20;
+  padding-top: 10;
+  opacity: 0.9;
+}
+
+.logo {
+  margin-bottom: 12;
+  height: 90;
+  font-weight: bold;
+}
+
+.header {
+  horizontal-align: center;
+  font-size: 25;
+  font-weight: 600;
+  margin-bottom: 70;
+  text-align: center;
+  color: #d51a1a;
+}
+
+.btn-primary {
+  height: 50;
+  margin: 30 5 15 5;
+  background-color: #7702a7;
+  border-radius: 5;
+  font-size: 20;
+  font-weight: 600;
+  padding: 5;
+  color: white
+}
+
+.navigator {
+  padding: 10;
+}
+
+.mini-mandala {
+  animation: orbit 30s;
+}
