@@ -28,4 +28,4 @@ You will have the standard options for debugging available to you as you would w
 1.  `npm run debug:android`
 2.  `npm run debug:ios`
 
-> Note, this app uses Firebase; please use your own credentials to setup Firebase for your own project.
+> Note, this app uses Firebase; please use your own credentials to setup Firebase for your own project. Because of inappropriate content being posted, I've been obliged to remove the Firebase files.
